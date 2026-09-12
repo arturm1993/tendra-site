@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tendra — A quiet minute, whenever you need one</title>
+<style>
+  :root {
+    --ink: #2b2a28;
+    --paper: #faf7f2;
+    --sage: #6b8f7a;
+    --sage-deep: #4d6f5c;
+    --sage-pale: #e7efe9;
+    --line: #e4ddd1;
+    --muted: #6b6660;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 16px; }
+  .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+  .cta-small {
+    background: var(--sage-deep);
+    color: #fff;
+    padding: 9px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .hero { padding: 64px 0 40px; max-width: 620px; }
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin: 0 0 18px;
+  }
+  .hero p.lead {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0 0 32px;
+    max-width: 480px;
+  }
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .cta-primary {
+    background: var(--sage-deep);
+    color: #fff;
+    padding: 13px 24px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .cta-secondary {
+    color: var(--ink);
+    padding: 13px 24px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid var(--line);
+  }
+
+  .strip {
+    background: var(--sage-pale);
+    border-radius: 14px;
+    padding: 28px 30px;
+    margin: 8px 0 60px;
+    font-size: 15px;
+    color: var(--sage-deep);
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 64px;
+  }
+  .feature {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px 22px 24px;
+    background: #fff;
+  }
+  .feature .num {
+    font-size: 13px;
+    color: var(--sage-deep);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .feature h3 { margin: 0 0 8px; font-size: 17px; }
+  .feature p { margin: 0; font-size: 14.5px; color: var(--muted); }
+
+  .quote {
+    border-left: 3px solid var(--sage);
+    padding-left: 22px;
+    margin: 0 0 64px;
+    font-size: 19px;
+    color: #423f3a;
+    max-width: 560px;
+  }
+  .quote span { display: block; margin-top: 10px; font-size: 14px; color: var(--muted); }
+
+  .final {
+    text-align: center;
+    padding: 56px 24px 72px;
+    border-top: 1px solid var(--line);
+  }
+  .final h2 { font-size: 26px; margin: 0 0 14px; }
+  .final p { color: var(--muted); margin: 0 0 26px; }
+
+  footer {
+    text-align: center;
+    padding: 30px 24px 50px;
+    font-size: 13px;
+    color: #9a948a;
+  }
+
+  @media (max-width: 620px) {
+    .features { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><span class="dot"></span> Tendra</div>
+      <a class="cta-small" href="#download">Get the app</a>
+    </nav>
+
+    <section class="hero">
+      <h1>A quiet minute, whenever you need one.</h1>
+      <p class="lead">Tendra is a 3-minute reset for the moments between things — a quick check-in, a guided exercise, a place to put your thoughts down.</p>
+      <div class="cta-row">
+        <a class="cta-primary" href="#download">Download for iPhone</a>
+        <a class="cta-secondary" href="#how-it-works">See how it works</a>
+      </div>
+    </section>
+
+    <div class="strip">
+      Not therapy. Not a big commitment. Just a fast, private way to check in with yourself before the day pulls you along.
+    </div>
+
+    <section id="how-it-works" class="features">
+      <div class="feature">
+        <div class="num">Check in</div>
+        <h3>How are you, really?</h3>
+        <p>One tap tells Tendra how you're feeling. No forms, no long surveys.</p>
+      </div>
+      <div class="feature">
+        <div class="num">Reset</div>
+        <h3>A 3–5 minute exercise</h3>
+        <p>Matched to your mood — breathing, grounding, or a quick reframe. Done before your coffee cools.</p>
+      </div>
+      <div class="feature">
+        <div class="num">Write</div>
+        <h3>A private place to think</h3>
+        <p>Journal entries stay yours. No feed, no followers, no audience.</p>
+      </div>
+      <div class="feature">
+        <div class="num">Notice</div>
+        <h3>Patterns over time</h3>
+        <p>See your streaks and the moods that show up most, so you can spot what's actually going on.</p>
+      </div>
+    </section>
+
+    <p class="quote">
+      "I don't need another app to open for twenty minutes. I need thirty seconds to feel like myself again."
+      <span>— why we built this</span>
+    </p>
+
+    <section id="download" class="final">
+      <h2>Start with one check-in.</h2>
+      <p>Free to try. No account required to begin.</p>
+      <a class="cta-primary" href="#">Download on the App Store</a>
+    </section>
+
+    <footer>Tendra · 2026 · <a href="mailto:support@tendraapp.com" style="color:inherit;">support@tendraapp.com</a></footer>
+  </div>
+</body>
+</html>
